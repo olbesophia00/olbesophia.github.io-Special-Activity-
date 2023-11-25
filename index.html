@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity Special</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="image/moon.png" class="moon" width="500" height="655">
+        <header>
+            <a href="#" class="logo">Moonlight</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;" class="active">Home</a></li>
+                <li><a href="#" style="--i:2;">About</a></li>
+                <li><a href="#" style="--i:3;">New</a></li>
+                <li><a href="#" style="--i:4;">Blog</a></li>
+                <li><a href="#" style="--i:5;">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>The Moonlight of Night</h2>
+                <p>See how this conscious moon</p>
+                <p>After sipping from the heavens eye</p>
+                <p> That guides the path at noon</p>
+                <p>Is secluded in the glorious sky.</p>
+                <a href="#">Read More</a> 
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#" style="--i:12;"><img src="image/cats.png" width="50px" height="60"></a></li>
+        </ul>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation= document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
